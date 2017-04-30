@@ -1,4 +1,5 @@
 var HtmlPlugin = require("html-webpack-plugin");
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: "./src/index.js",
@@ -11,7 +12,10 @@ module.exports = {
         new HtmlPlugin({
             template: "./src/index.html",
             inject: "body"
-        })
+        }),
+	new CopyWebpackPlugin([
+		{ from: 'data/', to: 'data/' }
+	]),
     ],
     devServer: {
         contentBase: "./build"
@@ -24,7 +28,8 @@ module.exports = {
                 test: /\.(png|gif|jpg|jpeg)$/,
                 loader: "file-loader"
             },
-            { test: /Cesium\.js$/, loader: "script" }
+            { test: /Cesium\.js$/, loader: "script" },
+	    { test: /\.czml$/, loader: "file" },
         ]
     }
 };
