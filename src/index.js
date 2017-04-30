@@ -55,8 +55,9 @@ viewerDragDropMixin) {
 			button.className = 'cesium-button';
 			button.onclick = function(name) { return function() {
 				viewer.dataSources.removeAll();
-				viewer.dataSources.add(CzmlDataSource.load('data/'+name+'.czml'));
-				viewer.zoomTo(viewer.entities);
+				viewer.dataSources.add(CzmlDataSource.load('data/'+name+'.czml')).then(function (dataSource) {
+					viewer.flyTo(dataSource);
+				});
 			} }(name);
 			button.textContent = name;
 			document.getElementById('toolbar').appendChild(button);
