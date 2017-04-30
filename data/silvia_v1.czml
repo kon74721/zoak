@@ -1,0 +1,106 @@
+
+[
+  {
+    "id":"document",
+    "version":"1.0"
+  },
+  {
+    "id":"Vehicle",
+    "availability":"2012-08-04T16:00:00Z/2012-08-04T17:04:54.9962195740191Z",
+    "billboard":{
+      "eyeOffset":{
+        "cartesian":[
+          0.0,0.0,0.0
+        ]
+      },
+      "horizontalOrigin":"CENTER",
+      "image":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEISURBVEhLvVXBDYQwDOuojHKj8LhBbpTbpBCEkZsmIVTXq1RVQGrHiWlLmTTqPiZBlyLgy/KSZQ5JSHDQ/mCYCsC8106kDU0AdwRnvYZArWRcAl0dcYJq1hWCb3hBrumbDAVMwAC82WoRvgMnVMDBnB0nYZFTbE6BBvdUGqVqCbjBIk3PyFFR/NU7EKzru+qZsau3ryPwwCRLKYOzutZuCL6fUmWeJGzNzL/RxAMrUmASSCkkAayk2IxPlwhAAYGpsiHQjbLccfdOY5gKkCXAMi7SscAwbQpAnKyctWyUZ6z8ja3OGMepwD8asz+9FnSvbhU8uVOHFIwQsI3/p0CfhuqCSQuxLqsN6mu8SS+N42MAAAAASUVORK5CYII=",
+      "pixelOffset":{
+        "cartesian2":[
+          0.0,0.0
+        ]
+      },
+      "scale":0.8333333333333334,
+      "show":[
+        {
+          "interval":"2012-08-04T16:00:00Z/2012-08-04T18:00:00Z",
+          "boolean":true
+        }
+      ],
+      "verticalOrigin":"BOTTOM"
+    },
+    "label":{
+      "fillColor":[
+        {
+          "interval":"2012-08-04T16:00:00Z/2012-08-04T18:00:00Z",
+          "rgba":[
+            255,255,0,255
+          ]
+        }
+      ],
+      "font":"bold 10pt Segoe UI Semibold",
+      "horizontalOrigin":"LEFT",
+      "outlineColor":{
+        "rgba":[
+          0,0,0,255
+        ]
+      },      "epoch":"2012-08-04T16:00:00Z",
+      "pixelOffset":{
+        "cartesian2":[
+          10.0,0.0
+        ]
+      },
+      "scale":1.0,
+      "show":[
+        {
+          "interval":"2012-08-04T16:00:00Z/2012-08-04T18:00:00Z",
+          "boolean":true
+        }
+      ],
+      "style":"FILL",
+      "text":"Silvia",
+      "verticalOrigin":"CENTER"
+    },
+    "path":{
+      "material":{
+          "solidColor":{
+            "color":{
+                "interval":"2012-08-04T16:00:00Z/2012-08-04T18:00:00Z",
+                "rgba":[
+                  255,255,0,255
+                ]
+              }
+            }
+      },
+      "width":[
+        {
+          "interval":"2012-08-04T16:00:00Z/2012-08-04T18:00:00Z",
+          "number":5.0
+        }
+      ],
+      "show":[
+        {
+          "interval":"2012-08-04T16:00:00Z/2012-08-04T18:00:00Z",
+          "boolean":true
+        }
+      ]
+    },
+    "position":{
+      "interpolationAlgorithm":"LAGRANGE",
+      "interpolationDegree":1,
+      "cartographicDegrees":[
+        "2012-08-04T16:00:00Z", 26.1822842, 40.8943811, 3.0,
+        "2012-08-04T16:40:09Z", 26.1822328, 40.8944212, 3.0,
+        "2012-08-04T16:55:04Z", 26.1822779, 40.8943781, 3.0,
+        "2012-08-04T16:00:26Z", 26.1821704, 40.8943735, 3.0,
+        "2012-08-04T17:15:19Z", 26.182212, 40.8943927, 3.0,
+        "2012-08-04T17:21:19Z", 26.1821236, 40.8940643, 3.0,
+        "2012-08-04T17:25:09Z", 26.1822024, 40.8943372, 3.0,
+        "2012-08-04T17:31:20Z", 26.1823218, 40.8944895, 3.0,
+        "2012-08-04T17:40:16Z", 26.1824697, 40.8944493, 3.0,
+        "2012-08-04T17:45:14Z", 26.1823109, 40.8944855, 3.0,
+        "2012-08-04T17:50:10Z", 26.1823988, 40.8944263, 3.0
+      ]
+    }
+  }
+]
