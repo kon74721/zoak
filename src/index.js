@@ -57,6 +57,8 @@ viewerDragDropMixin) {
 				viewer.dataSources.removeAll();
 				viewer.dataSources.add(CzmlDataSource.load('data/'+name+'.czml')).then(function (dataSource) {
 					viewer.flyTo(dataSource);
+				}).otherwise(function(error) {
+					showLoadError(source, error);
 				});
 			} }(name);
 			button.textContent = name;
