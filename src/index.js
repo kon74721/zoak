@@ -4,19 +4,6 @@ BuildModuleUrl.setBaseUrl('./');
 
 var _data = require('../data/index.js');
 
-function ui_addbutton(text, onclick) {
-	var button = document.createElement('button');
-	button.type = 'button';
-	button.className = 'cesium-button';
-	button.onclick = function() {
-		// window.Sandcastle.reset();
-		// window.Sandcastle.highlight(onclick);
-		onclick();
-	};
-	button.textContent = text;
-	document.getElementById('toolbar').appendChild(button);
-}
-
 define([
 'cesium/Source/Core/defined',
 'cesium/Source/Core/formatError',
@@ -63,17 +50,16 @@ viewerDragDropMixin) {
 	function init_ui() {
 		for (var name in _data) {
 			var description = _data[name];
-			ui_addbutton(name, function() {
+			var button = document.createElement('button');
+			button.type = 'button';
+			button.className = 'cesium-button';
+			button.onclick = function(name) { return function() {
 				viewer.dataSources.removeAll();
 				viewer.dataSources.add(CzmlDataSource.load('data/'+name+'.czml'));
-				/*viewer.scene.camera.setView({
-					destination:  Cesium.Cartesian3.fromDegrees(-116.52, 35.02, 95000),
-					orientation: {
-						heading: 6
-					}
-				}); */
 				viewer.zoomTo(viewer.entities);
-			});
+			} }(name);
+			button.textContent = name;
+			document.getElementById('toolbar').appendChild(button);
 		}
 	}
 
