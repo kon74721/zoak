@@ -2,6 +2,8 @@
 
 Visualize animal tracking data in [Cesium](https://cesiumjs.org/).
 
+![Example view with cats in a city](demo/zoak_example.png)
+
 ### Run ###
 
 ```bash
@@ -29,3 +31,7 @@ Note that data from movebank can be downloaded from movebank [map](https://www.m
 ### Why zoak ###
 
 While minimal, Zoak provides a mean to visualize animal tracking data on a much more flexible platform than typical custom applications used by different data providers. Zoak presents the tracking data in the [Cesium](https://cesiumjs.org/) interactive 3d environment, which enables data to be mixed with different imagery layers to understand better factors affecting animal movements. Cesium is contributed by a large community and includes a lot of option to create the environment where the visualisation could be usefull to the viewer, making a new unexpected pattern emerge from the tracks.
+
+Features:
+* Visualisation of GPS tracks in Cesium
+* Import from [movebank](https://www.movebank.org/) facilitated (you should check license of data)
