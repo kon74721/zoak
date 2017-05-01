@@ -50,7 +50,7 @@ viewerDragDropMixin) {
 	function init_ui() {
 		for (var name in _data) {
 			var description = _data[name];
-			var button = document.createElement('button');
+			var button = document.createElement('li');
 			button.type = 'button';
 			button.className = 'cesium-button';
 			button.onclick = function(name) { return function() {
@@ -61,8 +61,8 @@ viewerDragDropMixin) {
 					showLoadError(source, error);
 				});
 			} }(name);
-			button.textContent = name;
-			document.getElementById('toolbar').appendChild(button);
+			button.textContent = description;
+			document.getElementById('sources').appendChild(button);
 		}
 	}
 
