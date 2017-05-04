@@ -14,7 +14,7 @@ module.exports = {
             inject: "body"
         }),
 	new CopyWebpackPlugin([
-		{ from: 'data/*.czml' }
+		{ from: 'data/out/*.czml' }
 	]),
     ],
     devServer: {

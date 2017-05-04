@@ -1,6 +1,6 @@
 ## zoak ##
 
-Visualize animal tracking data in [Cesium](https://cesiumjs.org/). Easy import from movebank.
+Visualize animal tracking data in [Cesium](https://cesiumjs.org/). Easy [import from movebank](data/movebank/README.txt) via [scripts](data/movebank/convert_movebank.py).
 
 ![Example view with cats in a city](presentation/zoak_example.png)
 

@@ -1,2 +1,2 @@
 all rebuild:
-	./convert.sh
+	./rebuild_czml.sh

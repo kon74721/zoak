@@ -55,7 +55,7 @@ viewerDragDropMixin) {
 			button.className = 'cesium-button';
 			button.onclick = function(name) { return function() {
 				viewer.dataSources.removeAll();
-				viewer.dataSources.add(CzmlDataSource.load('data/'+name+'.czml')).then(function (dataSource) {
+				viewer.dataSources.add(CzmlDataSource.load('data/out/'+name+'.czml')).then(function (dataSource) {
 					viewer.flyTo(dataSource);
 				}).otherwise(function(error) {
 					showLoadError(source, error);

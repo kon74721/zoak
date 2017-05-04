@@ -3,4 +3,4 @@ all rebuild:
 	./rebuild.sh
 
 copy:
-	cp *.czml ../build/data/
+	cp out/*.czml ../build/data/
