@@ -1,15 +1,14 @@
 {
-  "name": "cesium-webpack-boilerplate",
-  "version": "1.1.0",
-  "description": "A boilerplate for cesiumjs",
-  "main": "app.js",
+  "name": "zoak",
+  "version": "0.0.1",
+  "description": "Animal track visualisation in Cesiumjs",
   "scripts": {
     "clean": "mkdirp build & rimraf build/*",
     "build": "npm run clean && cpr node_modules/cesium/Build/Cesium build && webpack --config webpack.config.js --progress",
     "build-release": "npm run build -- --optimize-minimize",
     "start": "webpack-dev-server -w --config webpack.config.js --progress --display-error-details"
   },
-  "author": "Maxime Warnier",
+  "author": "Laurent Ghigonis & Konstantina Tsoura",
   "license": "MIT",
   "dependencies": {
     "cesium": "^1.32.1"
